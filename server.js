@@ -12,7 +12,7 @@ const butterfactoryinfoRoute = require('./routes/butterfactoryinfoRoute')
 require('dotenv').config();
 
 const app = express();
-const PORT = process.env.PORT || 7000;
+const PORT = process.env.PORT || 1300;
 
 
 
@@ -66,5 +66,5 @@ app.use('/buyandsell', sellAndBuy)
 
 app.listen(PORT, () => {
 
-  console.log(`Server is running on port ${7000}`);
+  console.log(`Server is running on port ${1300}`);
 });
