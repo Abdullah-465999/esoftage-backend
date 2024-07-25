@@ -21,9 +21,17 @@ const config = {
   password: process.env.PSWRD, // Database password
   server: process.env.SERVER, // SQL Server instance name
   database: process.env.DATABASE, // Database name
-  options: {
-    encrypt: true, // Set to true if you need encryption
-    trustServerCertificate: true // Set to true if using self-signed certificates
+   options: {
+    encrypt: true,
+    enableArithAbort: true,
+    trustServerCertificate: true,
+    connectionTimeout: 30000,
+    requestTimeout: 30000
+  },
+  pool: {
+    max: 10,
+    min: 0,
+    idleTimeoutMillis: 30000
   }
 };
 
