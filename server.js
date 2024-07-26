@@ -17,7 +17,7 @@ const PORT = process.env.PORT || 1300;
 
 
 const config = {
-  user: process.env.USER, // Database username
+  user: process.env.NAME, // Database username
   password: process.env.PSWRD, // Database password
   server: process.env.SERVER, // SQL Server instance name
   database: process.env.DATABASE, // Database name
@@ -73,7 +73,7 @@ app.use('/buyandsell', sellAndBuy)
 
 
 app.listen(PORT, () => {
-  console.log('User:', process.env.USER);
+  console.log('User:', process.env.NAME);
 console.log('Password:', process.env.PSWRD);
 console.log('Server:', process.env.SERVER);
 console.log('Database:', process.env.DATABASE);
