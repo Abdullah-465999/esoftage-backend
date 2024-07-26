@@ -73,6 +73,9 @@ app.use('/buyandsell', sellAndBuy)
 
 
 app.listen(PORT, () => {
-
+  console.log('User:', process.env.USER);
+console.log('Password:', process.env.PSWRD);
+console.log('Server:', process.env.SERVER);
+console.log('Database:', process.env.DATABASE);
   console.log(`Server is running on port ${1300}`);
 });
